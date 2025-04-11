@@ -1,0 +1,14 @@
+function slugify(title) {
+    // let slug = title.toLowerCase();
+    // slug = slug.split(" ");
+    // slug = slug.join("-");
+    return title.toLowerCase().split(" ").join("-");
+
+    // return title.trim().toLowerCase().split(" ").join("-"); - можна добавити ще trim() для того щоб обрізати лишні пробіли, якшо вони будть.
+}
+
+console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
+console.log(slugify("English for developer")); // "english-for-developer"
+console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+
